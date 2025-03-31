@@ -1,0 +1,549 @@
+/* Polices */
+@font-face {
+	font-family: 'Poppins-Bold';
+	src: url('../fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-Light';
+	src: url('../fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-SemiBold';
+	src: url('../fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-Regular';
+	src: url('../fonts/Poppins-Regular.ttf');
+}
+
+/* Police Lato */
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Lato-Light';
+	src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Lato-Regular';
+	src: url('../fonts/Lato-Regular.ttf');
+}
+
+.background-ecran{
+    background-image: url("../images/note_LSF.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh);
+    
+}
+
+.zeromargin-col2{
+    margin: 0;
+}
+
+h1{
+    width: 285px;
+    font-size: 30px;
+    font-family: 'Lato-Bold';
+}
+
+
+/* PARTIE DE SELECTIONS */
+#p1{
+    width: 253px;
+    height: 64px;
+    font-family:'Poppins-Light';
+    font-size: 20px;
+    color:#3a3835;  
+}
+
+
+
+input[type="radio"].form-check-input{
+    display: none;
+}
+
+input[type="radio"].form-check-input + label {
+	width: 114px;
+	height: 50px;
+    padding-top: 13px;
+    margin: 25px;
+    color: #4136f1;
+	border-radius: 20px;
+	border: 1px solid #4136f1;
+    overflow: hidden;
+    font-family: 'Poppins-SemiBold';
+    font-size: 14px;
+     
+}
+
+input[type="radio"].form-check-input:hover + label {
+
+	background: linear-gradient(-90deg , rgba(135,67,255,255) 0%, rgba(65,54,241,255) 100%);
+    color: white;
+    border: none;
+}
+
+input[type="radio"].form-check-input:checked + label {
+	background: linear-gradient(-90deg , rgba(135,67,255,255) 0%, rgba(65,54,241,255) 100%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    border: none;
+}
+
+/* PARTIE: Coordonnees de Particulier + Entreprise */
+
+#particulier{
+    width: 300px;
+    
+    margin-bottom: 40px;
+    font-family: 'Poppins-SemiBold';
+    font-size: 18px;
+    color:#3a3835;
+    line-height: 1em; 
+}
+
+#entreprise{
+    width: 396px;
+    
+    margin-bottom: 40px;
+    font-family: 'Poppins-SemiBold';
+    font-size: 18px;
+    color:#3a3835;
+    line-height: 1em; 
+}
+
+.particulier-coordonnees{
+    width: 412px;
+	/* height: 527px; */
+}
+
+input[type="text"].form-control{
+	font-family: 'Poppins-Regular';
+	font-size: 13px;
+    color:#3a3835;
+}
+
+.infos{
+    height: 56px;
+    border-radius: 14px;
+    background-color: #F2F2F2;
+    border: none;
+}
+
+input::placeholder{
+    opacity:0.4;
+    font-size: 12px;
+    overflow: hidden;
+	font-family: 'Poppins-Regular';
+}
+
+
+.invalid-feedback{
+    font-family: 'Poppins-Light';
+    font-size: 14px;
+    line-height: 18px;
+    color:#e85c5c;
+}
+
+/* PARTIE: Options */
+h2{
+    width: 270px;
+    height: 56px;
+    font-family: 'Poppins-Bold';
+    font-size: 18px;
+}
+
+#besoin{
+        width: 290px;
+        height: 40px;
+        overflow: hidden;
+        font-family: 'Poppins-Light';
+        font-size: 16px;
+        text-align: left;
+        line-height: 18px;
+}
+
+.switch{
+    width: 55px;
+    height: 27px;
+    position: relative;
+    display: inline-block;
+    background-color: #F2F2F2;
+    border-radius: 13.5px;
+}
+
+.switch input{
+    display:none;
+}
+
+.slider{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    border-radius: 13.5px;
+    cursor: pointer;
+}
+
+.slider:after{
+    position: absolute;
+    background: linear-gradient(-90deg , rgba(135,67,255,255) 0%, rgba(65,54,241,255) 100%);
+    height: 23px;
+    width: 24px;
+    content: "";
+    left: 2px;
+    bottom: 2px;
+    border-radius: 11.5px;
+    transition: 0.5s;
+}
+
+input:checked + .slider, .icon{
+    background: linear-gradient(-90deg , rgba(135,67,255,255) 0%, rgba(65,54,241,255) 100%);
+}
+
+input:checked + .slider:after{
+    transform: translateX(26.5px);
+    background: white;  
+}
+
+.icon{
+    border-radius: 16px;
+    width: 60px;
+    border: none;
+    box-shadow:0px 3px 6px 1px rgba(0,0,0,0.41);
+    position: relative;
+}
+
+/* CSS AJOUTE VINZ */
+
+.icon-file{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* FIN CSS AJOUTE VINZ */
+
+.upload{
+    width: 280px;
+    height: 56px;
+}
+
+.file-buton{
+    border-radius: 16px;
+    box-shadow:0px 3px 6px 1px rgba(0,0,0,0.41);
+}
+
+/* -----input file----- */
+.file_format{
+    width: 100%; 
+}
+
+.padd-a{
+    width: 255px;
+}
+
+.file-label{
+    display: block;
+    width: 44px;
+    height: 44px;
+    font: 1rem 'Fira Sans', sans-serif;
+    background: linear-gradient(-135deg , rgba(135,67,255,255) 0%, rgba(65,54,241,255) 100%);
+    border-radius: 14px;
+    box-shadow:0px 15px 30px 1px rgba(20,102,204,0.41);
+    padding: auto;
+}
+
+.lien-wetransfer{
+    width: 250px;
+    height: 56px;
+    border-radius: 16px;
+    box-shadow:0px 3px 6px 1px rgba(0,0,0,0.41);
+    border:none;
+    padding-left: 25px;
+    overflow: hidden;
+	font-family: 'Poppins-Regular';
+	font-size: 12px;
+    outline: none;
+}
+
+#choisirFile{
+    padding-top: 20px;
+}
+
+/* checkbox formats */
+
+h3{
+        width: 290px;
+        height: 30px;
+        overflow: hidden;
+        font-family: 'Poppins-Bold';
+        font-size: 18px;
+}
+
+h4{
+        width: 260px;
+        overflow: hidden;
+        font-family: 'Poppins-Bold';
+        font-size: 16px;
+        line-height: 18px;
+}
+
+  /*Checkboxes styles*/
+  input[type="checkbox"] { display: none; }
+  
+  input[type="checkbox"] + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin: 11px;
+    margin-bottom: 25px;
+    font: 14px/20px 'Open Sans', Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+  
+  input[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+	width: 23px;
+	height: 23px;
+	border-radius: 5px;
+	border: 2px solid #4136f1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .12s, border-color .08s;
+  }
+  
+  input[type="checkbox"]:checked + label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: #4136f1;
+    border-bottom-color: #4136f1;
+    transform: rotate(45deg);
+  }
+
+.format-video{
+	width: 202px;
+	height: 43px;
+    border-radius: 16px;
+	box-shadow:0px 3px 6px 1px rgba(0,0,0,0.41);
+    border: none;
+    padding-left: 25px;
+    margin-top: 10px;
+  }
+
+.esp{
+   width: 99%;
+   padding-bottom: 38px;
+}
+
+.padd-b{
+    padding-bottom: 15px;
+    overflow: hidden;
+    font-family: 'Poppins-Light';
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+#titre_1{
+    font-family: Lato;
+    font-size: 22px;
+    color:#3a3835; 
+    margin-bottom: 35px;
+}
+
+/* date délai */
+
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+input[type="date"] {
+    width: 255px;
+    height: 57px;
+    border-radius: 16px;
+    box-shadow:0px 3px 6px 1px rgba(0,0,0,0.41);
+    padding: 3px 5px;
+    border: none;
+    overflow: hidden;
+    font-family: 'Lato-Regular';
+    font-size: 12px;
+    text-align: left;
+    line-height: 14px;
+    color:gray;
+    margin-bottom: 2px;
+    padding-left: 25px;
+}
+
+.infos-suppl{
+    margin: 50px;
+}
+
+.informations{
+    width: 100%;;
+}
+
+.commentaire{
+    width: 100%;
+    height: 150px;
+    border-radius: 16px;
+    box-shadow:0px 3px 6px 1px rgba(0,0,0,0.41);
+    border:none;
+    padding-top: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+    font-family: Poppins-Regular;
+    font-size: 12px;
+    outline: none;
+    margin-bottom: 60px;
+}
+
+#lien-mail{
+    margin: auto;
+    text-align: center;
+}
+
+.dateDelai{
+        font-family: 'Poppins-Bold';
+        font-size: 16px;
+        line-height: 18px;
+
+}
+
+.commentaires{
+        font-family: 'Poppins-Bold';
+        font-size: 16px;
+        line-height: 18px;
+}
+
+.lienMail{
+        font-family: 'Poppins-Regular';
+        font-size: 14px;
+        line-height: 18px;
+}
+
+.mailto{
+    font-family: 'Poppins-Regular';
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* Show Hide TAB et Validate */
+.tab:not(:first-of-type){
+    display: none;
+}
+
+input.invalid {
+    background-color: #ffdddd
+}
+
+/* Bouton: next et précédent */
+
+.next {
+    width: 144px;
+    height: 56px;
+    margin-top: 23px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: linear-gradient(-90deg , rgba(135,67,255,255) 0%, rgba(65,54,241,255) 100%);
+    font-family: 'Poppins-SemiBold';
+    font-size: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.previous{
+    width: 144px;
+    height: 56px;
+    margin-top: 23px;
+    margin-right: 20px;
+    border-radius: 16px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #485563;
+    font-family: 'Poppins-SemiBold';
+    font-size: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Indice des étapes */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5
+}
+
+.step.active {
+    opacity: 1
+}
+
+.step.finish {
+    background-color: black;
+}
+
+.all-steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.thanks-message {
+    display: none
+}
+
+/* RESPONSIVE MOBILE */
+
+@media screen and (max-width: 1000px) { 
+    .background-ecran{ 
+        display : none;
+    } 
+}
+
+@media screen and (max-width: 600px) { 
+    .particulier-coordonnees{
+        width:100%;
+    }
+
+    #entreprise{
+        width:355px;
+    }
+}
+
+
+
+
+
+

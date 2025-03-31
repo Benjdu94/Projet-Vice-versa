@@ -1,0 +1,213 @@
+@font-face {
+	font-family: 'Poppins-Bold';
+	src: url('../fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-Light';
+	src: url('../fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-SemiBold';
+	src: url('../fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-Regular';
+	src: url('../fonts/Poppins-Regular.ttf');
+}
+/*-------QUI SOMMES NOUS--------*/
+#qui-sommes-nous{
+	padding-top:50px;
+	padding-bottom:55px;
+	background-image: url(../images/Fond-V&V-tram.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.photo-chrome-vv{
+	image-rendering: -webkit-optimize-contrast;
+}
+
+#sommes-nous{
+	font-family:'Poppins-Bold';
+	font-size:22px;
+	color:#2d2a26;
+
+}
+.separator{
+	margin-bottom:30px;
+	margin-left:165px;
+	width:56px;
+	height:2px;
+}
+#texts{
+	width: 45%;
+	height:100px;
+	margin: auto;
+	font-family:'Poppins-Light';
+	font-size:16px;
+	line-height:22px;
+	color:#212121;
+	display:flex;
+	justify-content:center;
+}
+
+@media screen and (max-width: 1000px) {
+	#texts{
+		width: 95%;
+	}
+	#qui-sommes-nous{
+		
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position-x: 20%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	#qui-sommes-nous{
+		
+		background-image: url(../images/Logo_vice&versa_picto_noir1.png);
+		background-repeat: no-repeat;
+		background-size: 140%;
+		background-attachment: fixed;
+		background-position-x: 80%;
+		background-position-y: 0%;
+		image-orientation: -30deg ;
+		
+		
+		
+	}
+}
+/*-------ACCORDION------*/
+#accordion{
+	display:flex;
+	flex-wrap:wrap;
+	
+}
+#accord{
+	background:#FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow:0px 3px 6px #00000029;
+	border-radius:16px;
+	opacity:1;
+	width: 100%;
+	border: none;
+	font-family:'Poppins-Regular';
+	font-size:15px;
+}
+#equipe{
+	background:#FFFFFF 0% 0% no-repeat padding-box;
+	border-radius:16px;
+	height:56px;
+	opacity:1;
+	font-family:'Poppins-Regular';
+	font-size:15px;
+	padding-top:15px;
+	border-top:none;
+	color:black;
+	padding-left:30px;
+	box-shadow:none;
+}
+.accordion-button:not(.collapsed)::after{
+	
+	background-image : url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+
+
+.accordion-button::after{
+	/* box-shadow: 0px 15px 30px #1466CC29; */
+	background-color: #584BEB;
+	background-size: 1.25rem;
+	background-position:center;
+	border-radius:18px;
+	padding:18px;
+	outline:none;
+}
+.accordion-button.collapsed::after{
+	/*box-shadow: 0px 15px 30px #1466CC29;*/
+	background-color: #584BEB;
+	opacity:1;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+	background-size: 1.25rem;
+	background-position:center;
+	background-repeat: no-repeat;
+	border-radius:18px;
+	width:36px;
+	height:36px;
+}
+#body{
+	box-shadow: 0px white;
+	height:497px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border-radius:16px;
+	border-top:none;
+	overflow:auto;
+}
+#img{
+	height:350px;
+	width:240px;
+	margin-top:50px;
+}
+.txt_blod{
+	text-align:left;
+	font-size:13px;
+	font-family: 'Poppins-Bold';
+}
+.txt{
+	text-align:left;
+	font-size:10px;
+	font-family: 'Poppins-Light';
+	line-height:10px;
+}
+#deux_images{
+	height:auto;
+	width:366px;
+}
+
+@media screen and (max-width: 450px) {
+	#deux_images{
+		height:auto;
+		width:300px;
+	}
+
+	.float-button{
+		
+		width:30px;
+		height:30px;
+		bottom:40px;
+		right:40px;
+		
+	}
+	
+	.icon-arrow{
+		margin-top: 8px;
+	}
+}
+
+.float-button{
+	display: none;
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:40px;
+	right:40px;
+	background: transparent linear-gradient(225deg, #8743FF 0%, #4136F1 100%) 0% 0% no-repeat padding-box !important;
+	box-shadow: 0px 15px 30px #1466CC29 !important;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.icon-arrow{
+	margin-top: 10px;
+}
+

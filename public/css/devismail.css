@@ -1,0 +1,33 @@
+/* POLICE */
+
+@font-face {
+	font-family: 'Lato-Regular';
+	src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Lato-SemiBold';
+	src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Lato-Light';
+	src: url('../fonts/Lato-Light.ttf');
+}
+
+.devis {
+    font-family: 'Lato-SemiBold';
+    color: black;
+    font-size: 80px;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+.section1, .section2, .section3, .section4 {
+	font-family: 'Lato-regular';
+	color: black;
+	font-size: 25px;
+}

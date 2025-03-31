@@ -1,0 +1,271 @@
+/*----------- POLICES ---------*/
+@font-face {
+	font-family: 'Lato-Black';
+	src: url('../fonts/Lato-Black.ttf');
+}
+@font-face {
+	font-family: 'Lato-Light';
+	src: url('../fonts/Lato-Light.ttf');
+}
+/*-----------------chiffres-----------------*/
+#chiffre{ 
+	padding-top:150px;
+	padding-bottom:150px;
+	background-image: url(../images/bg_counter.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	image-rendering: -webkit-optimize-contrast;
+	margin:auto;
+}
+/* ------ BLOCS ------*/
+#blocs{
+	flex-wrap:wrap;
+}
+
+.photo-chrome-vv{
+	image-rendering: -webkit-optimize-contrast;
+}
+/*------display-----*/
+.display{
+	display:flex;
+	flex-wrap:wrap;
+ }
+/*------ RECTANGLE 1 SIGN-LANGUAGE -------*/
+.rectangle_1{
+	background:rgba(255,255,255,255);
+	width:314px;
+	height:310px;
+	transition:0.6s;
+
+}
+.rectangle_1:hover{
+	transition:0.6s;
+	box-shadow: 0  5px 10px rgba(154,160,185,0.05),0 15px 40px rgba(166,173,201,0.2);
+     transform: scale(1.15, 1.15);
+	 
+}
+.rectangle_1::after{
+  content: "";
+  border-radius:2px;
+  position:absolute;
+  z-index: -1;
+	box-shadow: 0  5px 10px rgba(154,160,185,0.05),0 15px 40px rgba(166,173,201,0.2);
+  
+  opacity: 0.5;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.sign-language-black{
+	width:193px;
+	
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	bottom:45px;
+	display:block;
+	margin:auto;
+}
+/*------ RECTANGLE 2 VIDEO-CAMERA -------*/
+.rectangle_2{
+	background:rgba(255,255,255,255);
+	width:314px;
+	height:310px;
+	transition:0.6s;
+}
+.rectangle_2:hover{
+	transition:0.6s;
+	box-shadow: 0  5px 10px rgba(154,160,185,0.05),0 15px 40px rgba(166,173,201,0.2);
+     transform: scale(1.15, 1.15);
+}
+.rectangle_2::after{
+  content: "";
+  border-radius:2px;
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0 5px 15px rgba(0.3, 0.3, 0.3, 0.3);
+  opacity: 0.5;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.video-camera{
+	width:218px;
+	
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	bottom:30px;
+	display:block;
+	margin:auto;
+}
+/*------ RECTANGLE 3 EXPRESSO -------*/
+.rectangle_3{
+	background:rgba(255,255,255,255);
+	width:314px;
+	height:310px;
+	transition:0.6s;
+}
+.rectangle_3:hover{
+	transition:0.6s;
+	box-shadow: 0  5px 10px rgba(154,160,185,0.05),0 15px 40px rgba(166,173,201,0.2);
+     transform: scale(1.15, 1.15);
+}
+.rectangle_3::after{
+  content: "";
+  border-radius:2px;
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0 5px 15px rgba(0.3, 0.3, 0.3, 0.3);
+  opacity: 0.5;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.expresso{
+	width:192px;
+	
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	bottom:45px;
+	display:block;
+	margin:auto;
+}
+/*------ RECTANGLE 4 CUSTOMER -------*/
+.rectangle_4{
+	background:rgba(255,255,255,255);
+	width:314px;
+	height:310px;
+	transition:0.6s;
+}
+.rectangle_4:hover{
+	transition:0.6s;
+	box-shadow: 0  5px 10px rgba(154,160,185,0.05),0 15px 40px rgba(166,173,201,0.2);
+     transform: scale(1.15, 1.15);
+}
+.rectangle_4::after{
+  content: "";
+  border-radius:2px;
+  position:absolute;
+  z-index: -1;
+  box-shadow: 0 5px 15px rgba(0.3, 0.3, 0.3, 0.3);
+  opacity: 0.5;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.customer{
+	width:171px;
+	
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	bottom:45px;
+	display:block;
+	margin:auto;
+}
+
+/* RESPONIVE BLOCS */
+@media screen and (max-width: 1000px) {
+	#chiffre{
+		padding: 50px 0;
+	background-image: url(../images/bg_counter.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	}
+	.rectangle_4, .rectangle_2, .rectangle_1, .rectangle_3{
+		position: relative;
+		width:314px;
+		height:170px;
+		transition:0.6s;
+		overflow: hidden;
+		margin: 5px 0;
+		
+	}
+
+	
+	.customer{
+		width:171px;
+		height: auto;
+		position: absolute;
+		bottom: -30px;
+		background-size:cover;
+		background-position:center;
+		transform: scaleX(-1) rotate(-3deg);
+		
+	}
+
+	.expresso{
+		width:200px;
+		position: absolute;
+		height: auto;
+		bottom: -35px;
+		right: -20px;
+		background-size:cover;
+		background-position:center;
+		transform: scaleX(-1) rotate(25deg);
+		
+	}
+
+	.video-camera{
+		width:250px;
+		position: absolute;
+		top : 80px;
+		background-size:cover;
+		background-position:center;
+		transform: rotate(-10deg);
+	}
+
+	.sign-language-black{
+		width:200px;
+		position: absolute;
+		top: 80px;
+		right: -20px;
+		background-size:cover;
+		background-position:center;
+	}
+
+	.rectangle_4 .bold, .rectangle_3 .bold, .rectangle_2 .bold, .rectangle_1 .bold{
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -65%);
+	}
+
+	.rectangle_4 .hairline, .rectangle_3 .hairline, .rectangle_2 .hairline, .rectangle_1 .hairline{
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		transform: translate(-50%, -35%);
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+/*------ BOLD & HAIRLINE POUR POLICE -------*/
+.bold{
+	font-family: 'Lato-Black';
+	font-size:40px;
+	text-align:center;
+	color:#242424;
+	z-index:1;
+	position:relative;
+	top:35%;
+}
+.hairline{
+	font-family:'Lato-Light';
+	font-size:24px;
+	text-align:center;
+	color:#242424;
+	z-index:1;
+	position:relative;
+	top:35%;
+}
